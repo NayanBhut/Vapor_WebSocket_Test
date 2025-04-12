@@ -17,7 +17,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build
-      run: swift build -c release
+      run: swift build -c release --arch arm64 --arch x86_64 --product  Vapor_WebSocket_Test
     - name: Check path
       run: ls -la .build/apple/Products/Release
     - name: Upload macOS executable
