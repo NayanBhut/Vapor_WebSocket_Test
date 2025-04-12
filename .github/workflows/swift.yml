@@ -11,10 +11,11 @@ on:
 
 jobs:
   build:
-
-    runs-on: macos-latest
+    name: Generate macOS executable
+    runs-on: macOS-15
 
     steps:
+    
     - uses: actions/checkout@v4
     - name: Build
       run: swift build -c release --arch arm64 --arch x86_64
