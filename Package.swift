@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "LocationTrack",
     platforms: [
-       .macOS(.v12)
+       .macOS(.v15)
     ],
     dependencies: [
         // 💧 A server-side Swift web framework. 
